@@ -6,6 +6,29 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBqKi0TXpPOtiRhPRDMEMpSkGNd_OCvcq4",
+      authDomain: "moviefinder911123.firebaseapp.com",
+      projectId: "moviefinder911123",
+      storageBucket: "moviefinder911123.appspot.com",
+      messagingSenderId: "516362116409",
+      appId: "1:516362116409:web:8e36d39591e6d1eddc1ce8",
+      measurementId: "G-QN7H6KL704"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </head>
 <body>
   <app-root></app-root>

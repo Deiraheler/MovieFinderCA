@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
+import {IOMDBResponse} from "./omdbresponse";
+import {OmdbApiService} from "./omdb-api.service";
+import {CommonModule, NgIf} from "@angular/common";
+import {SearchtitleComponent} from "./components/searchtitle/searchtitle.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, NgIf, SearchtitleComponent, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
